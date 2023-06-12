@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us - JobKonnect</title>
+  <link rel="stylesheet" href="{% static 'css/about.css'%}">
+  <link rel="stylesheet" href="{% static '/css/index.css' %}">
+</head>
+<body>
+  <nav class="nav-bar">
+    <span class="logo">JOBKONNECT</span>
+    <ul class="nav-list">
+        <li class="nav-item" ><a href="/">HOME</a></li >
+        <li class="nav-item"><a href="/employer/post_job">POST JOB</a></li >
+        <li class="nav-item"><a href="/employee/">FIND JOB</a></li >
+        <li class="nav-item"><a href="/about/">ABOUT US</a></li >
+        <li class="nav-item"><a href="/contact/">CONTACT US</a></li >
+        <li class="nav-item"><button ><a href="/account/login" class="buttons">LOGIN</a></button></li >
+        <li class="nav-item"><button ><a href="/account/" class="buttons">REGISTER</a></button></li >
+    </ul>
+</nav>
+<div class="container">
+  <section>
+    <h2>About JobKonnect</h2>
+    <p>
+      JobKonnect is a leading online platform that connects employers and employees, making the job search and recruitment process efficient and hassle-free. Our goal is to bridge the gap between job seekers and companies, facilitating connections and opportunities in the job market.
+    </p>
+
+    <h3>Our Mission</h3>
+    <p>
+      At JobKonnect, our mission is to empower individuals in their job search and assist companies in finding the best talent. We strive to create a seamless and user-friendly experience for both employers and job seekers, leveraging cutting-edge technology and innovative features to optimize the recruitment process.
+    </p>
+
+    <h3>What We Offer</h3>
+    <p>
+      For Job Seekers: We provide a comprehensive job search platform, offering a wide range of job opportunities across various industries and locations. Our advanced search filters and personalized recommendations help job seekers find their dream job quickly and easily. We also offer resources such as resume-building tips, interview guidance, and career advice to support their professional growth.
+
+      For Employers: We offer a robust recruitment solution that enables companies to attract top talent efficiently. Our platform allows employers to post job listings, review candidate profiles, and streamline the hiring process. We also provide tools for applicant tracking, communication, and employer branding to help businesses build a strong workforce.
+
+      For Both: We foster a dynamic community where employers and job seekers can interact, network, and engage in meaningful discussions. Our platform encourages collaboration and fosters long-term connections, ensuring successful matches between candidates and companies.
+
+    </p>
+
+    <h3>Contact Us</h3>
+    <p>
+      We value your feedback and are available to address any questions or concerns you may have. Please don't hesitate to reach out to our dedicated support team via email at <a href="mailto:jobkonnect@gmail.com">info@jobkonnect.com</a> or call us at <a href="tel:+254719728369">+254719728369 </a>. We look forward to assisting you!
+    </p>
+  </section>
+</div>
+  <footer>
+    <p>&copy; 2023 JobKonnect. All rights reserved. | <a href="{% url 'privacy' %}">Privacy Policy</a> | <a href="{% url 'about' %}">About Us</a> | <a href="{% url 'contact' %}">Contact Us</a> | <a href="{% url 'terms' %}">Terms of service</a></p>
+  </footer>
+</body>
+</html>
+
